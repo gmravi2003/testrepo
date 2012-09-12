@@ -25,15 +25,17 @@ class Assign1:
                 else:
                     line=line.strip()
                     line=line.split('\t')
+                    line=[val.lstrip() for val in line]
                     #Check if the line is about relative positions
                     # or component description
-                    if('LEFT' in line or 'ABOVE' in line or 'INSIDE'
-                       in line or 'OUTSIDE' in line):
+                    if(('LEFT' in line or 'ABOVE' in line or 'INSIDE'
+                       in line or 'OUTSIDE' in line)):
                         comp1=line[0]
                         comp2=line[2]
                         fr.relative_positions[line[1]].append((comp1,comp2))
                     else:
                         # This is simply a description of the component
+                        print line
                         name=line[0]
                         size=float(line[1])
                         orientation=int(line[2])
@@ -50,7 +52,7 @@ class Assign1:
 
 current_dir=commands.getoutput('pwd')
 print current_dir
-filename='1-3.txt'
+filename='1-2.txt'
 full_filename=('/'.join(current_dir.split('/')[0:-1])+
                      '/Representations/'+filename)
 print full_filename
@@ -58,6 +60,5 @@ ass1=Assign1()
 ass1.ProcessFile(full_filename)
 
 print "Number of frames is ",len(ass1.list_of_frames)
-for val in ass1.list_of_frames[5].list_of_comp:
-    print val.__str__()
+print ass1.list_of_frames[2].relative_positions
 
