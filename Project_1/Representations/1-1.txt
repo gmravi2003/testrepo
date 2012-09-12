@@ -1,0 +1,27 @@
+// Figure A. This has just one object called obj_a. 
+// Object description: Name, Size,Orientation (clockwse is
+//+ve),Reflection (reflection precedes orientation).
+// Frame A
+A  obj_a
+obj_a	  1	       0     1
+//Frame B
+B	obj_a
+obj_a	  1	       0     -1
+// Frame C
+C  obj_a
+obj_a	 1	0	1
+//Frame D_1
+D_1	obj_a
+obj_a	1	180	0
+//Frame D_2
+D_2	obj_a
+obj_b	1	0	0	
+//Frame D_3
+D_3	obj_a
+obj_a	1	0	-1
+//Frame D_4
+D_4	obj_a
+obj_a	1	-270	-1
+//Frame D_5
+D_5	obj_a
+obj_a	1	-90	-1
