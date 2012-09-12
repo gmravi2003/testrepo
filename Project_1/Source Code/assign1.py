@@ -26,6 +26,7 @@ class Assign1:
                     line=line.strip()
                     line=line.split('\t')
                     line=[val.lstrip() for val in line]
+                    line=[val.rstrip() for val in line]
                     #Check if the line is about relative positions
                     # or component description
                     if(('LEFT' in line or 'ABOVE' in line or 'INSIDE'
