@@ -1,19 +1,19 @@
 
 //Frame A
-A	obj_a	obj_b	obj_c
+//A	obj_a	obj_b	obj_c
 obj_a	1	0	0
 obj_b	1	0	0
 obj_c	1	0	0
 obj_a	INSIDE	obj_b
 
 // Frame B
-B  obj_a obj_b
-obj_a	 1	0	0
-obj_b	 1	0	0  
-obj_a	 OUTSIDE	obj_b
+//B  obj_a obj_b
+obj_a	   1	0	0
+obj_b	   1	0	0  
+obj_a	   OUTSIDE	obj_b
 
 //Frame C
-C	obj_a	obj_b	obj_c
+//C	obj_a	obj_b	obj_c
 obj_a	1	0	0
 obj_b	1	0	0
 obj_c	1	0	0
@@ -21,7 +21,7 @@ obj_a	INSIDE	obj_b
 obj_b	LEFT	obj_c
 
 //Frame D_1
-D_1	obj_a	obj_b	obj_c
+//D_1	obj_a	obj_b	obj_c
 obj_a	1	0	0
 obj_b	1	0	0
 obj_c	1	0	0
@@ -29,16 +29,16 @@ obj_a	INSIDE	obj_b
 obj_c	LEFT	obj_b
 
 //Frame D_2
-D_2	obj_a	obj_b
+//D_2	obj_a	obj_b
 obj_a	1	0	0
 obj_b	1	0	0
 obj_b	LEFT	obj_a
 
 //Frame D_3
-D_3	obj_a	obj_b
+//D_3	obj_a	obj_b
 obj_a	INSIDE	obj_b
 
 //Frame D_4
-D_4	obj_a	obj_c
+//D_4	obj_a	obj_c
 obj_a	LEFT	obj_c	
 
