@@ -1,0 +1,33 @@
+//Frame A
+A	obj_a	obj_b
+obj_a	1	0	0
+obj_b	1	0	0
+obj_a	INSIDE	obj_b
+//Frame B
+B	obj_a
+obj_a	2	0	0
+//Frame C
+C	obj_a	obj_b
+obj_a	1	0	0
+obj_b	1	0	0
+obj_a	INSIDE	obj_b
+//Frame D_1
+D_1	obj_b	obj_c
+obj_b	1	0	0
+obj_c	1	0	0
+obj_c	INSIDE	obj_b
+//Frame D_2
+D_2	obj_a
+obj_a	1	0	0
+//Frame D_3
+D_3	obj_b	obj_d
+obj_b	1	0	0
+obj_d	1	0	0
+obj_d	INSIDE	obj_b
+//Frame D_4
+D_4	obj_a
+obj_a	2	0	0
+//Frame D_5
+D_5	obj_d
+obj_d	2	0	0
+
